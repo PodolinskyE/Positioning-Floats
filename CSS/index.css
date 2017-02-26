@@ -74,6 +74,7 @@ p {
 
 .paper-fr {
 	background-color: #EBEBEB;
+	z-index: 2;
 	top: -1880px;
 }
 .bookmark-fr {
@@ -85,7 +86,7 @@ p {
 	background-color: #CCCCCC;
 	top: -900px;
 	left: 20px;
-	z-index: -1;
+	z-index: 1;
 	position: relative;
 }
 .bookmark-mdl {
@@ -97,7 +98,6 @@ p {
 	background-color: #ACACAC;
 	top: 80px;
 	left: 40px;
-	z-index: -2;
 	position: relative;
 }
 .bookmark-btm {
@@ -163,6 +163,7 @@ footer.pageFooter p span {
 }
 
 #shareLinks {
+	z-index: 10;
 	height: 70px;
 	width: 90px;
 	border: 2px solid black;
@@ -170,4 +171,13 @@ footer.pageFooter p span {
 	right: 20px;
 	bottom: 20px;
 	background: #F68E56;
+}
+
+#shareLinks div ul {
+	display: table;
+	margin: auto;	
+}
+
+#shareLinks div ul li {
+	display: inline;
 }
